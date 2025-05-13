@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer with Logo</title>
+  <style>
+    /* Footer Styles */
+    .footer {
+      background-color: #002147;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 60px;
+      font-family: 'Segoe UI', sans-serif;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .footer .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Add space between the logo and the text */
+    }
+
+    .footer .logo-footer img {
+      width: 50px; /* Set a fixed width */
+      height: 50px; /* Set a fixed height to match the width */
+      border-radius: 50%; /* Makes the image circular */
+      object-fit: cover; /* Ensures the image covers the entire circle without stretching */
+    }
+
+    .footer .footer-text {
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="logo-footer">
+        <img src="./pro-logo.jpg" alt="Logo" />
+      </div>
+      <div class="footer-text">
+        © 2025 <strong>Projenius</strong>. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
