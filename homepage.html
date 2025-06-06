@@ -2,187 +2,187 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI-Powered Water Health Monitoring</title>
-    
-    <style>
-        /* Custom CSS */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #4a4a4a;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Powered Water Health Monitoring</title>
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    /* Custom CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #4a4a4a;
+    }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
 
-        /* Navbar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 24px;
-            background-color: gray;
-            color: #ffffff;
-        }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-        nav h1 {
-            font-size: 24px;
-            font-weight: bold;
-        }
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      background-color: gray;
+      color: #ffffff;
+    }
 
-        nav a {
-            margin-left: 24px;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
+    nav h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-        nav a:hover {
-            text-decoration: none;
-            cursor: pointer;
-        }
+    nav a {
+      margin-left: 24px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
 
-        /* Hero Section */
-        #home {
-            position: relative;
-            color: #ffffff;
-            text-align: center;
-            padding: 80px 24px;
-        }
+    nav a:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-        #home video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            z-index: -1;
-        }
+    /* Hero Section */
+    #home {
+      position: relative;
+      color: #ffffff;
+      text-align: center;
+      padding: 80px 24px;
+    }
 
-        #home h2 {
-            font-size: 48px;
-            font-weight: bold;
-            margin-bottom: 16px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
+    #home video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      z-index: -1;
+    }
 
-        #home p {
-            font-size: 20px;
-            margin-bottom: 32px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
+    #home h2 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
 
-        #home a {
-            background-color: #ffffff;
-            color: gray;
-            font-weight: bold;
-            padding: 12px 24px;
-            border-radius: 9999px;
-            transition: background-color 0.3s;
-        }
+    #home p {
+      font-size: 20px;
+      margin-bottom: 32px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
 
-        #home a:hover {
-            background-color: #e0f2fe;
-        }
+    #home a {
+      background-color: #ffffff;
+      color: gray;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      transition: background-color 0.3s;
+    }
 
-        /* Paragraph Section */
-        .description {
-            color: black;
-            padding: 60px 24px;
-            background-color: #f8f9fa;
-            text-align: center;
-        }
+    #home a:hover {
+      background-color: #e0f2fe;
+    }
 
-        .description p {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 18px;
-            line-height: 1.6;
-        }
+    /* Paragraph Section */
+    .description {
+      color: black;
+      padding: 60px 24px;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
 
-        /* Features Section */
-        #features {
-            padding: 80px 24px;
-            text-align: center;
-            background-color: #ffffff;
-        }
+    .description p {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
 
-        #features h3 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 40px;
-        }
+    /* Features Section */
+    #features {
+      padding: 80px 24px;
+      text-align: center;
+      background-color: #ffffff;
+    }
 
-        .feature-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-        }
+    #features h3 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
 
-        .feature-box {
-            padding: 15px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    .feature-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
 
-        .feature-box h4 {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 12px;
-        }
+    .feature-box {
+      padding: 15px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        /* About Section */
-        .about {
-            background-color: #eff6ff;
-            padding: 80px 24px;
-            text-align: center;
-        }
+    .feature-box h4 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
 
-        .about h3 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 16px;
-        }
+    /* About Section */
+    .about {
+      background-color: #eff6ff;
+      padding: 80px 24px;
+      text-align: center;
+    }
 
-        .about p {
-            max-width: 768px;
-            margin: 0 auto;
-        }
+    .about h3 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
 
-        /* Contact Section */
-        #contact {
-            background-color: #ffffff;
-            padding: 80px 24px;
-            text-align: center;
-        }
+    .about p {
+      max-width: 768px;
+      margin: 0 auto;
+    }
 
-        #contact h3 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 16px;
-        }
+    /* Contact Section */
+    #contact {
+      background-color: #ffffff;
+      padding: 80px 24px;
+      text-align: center;
+    }
 
-        #contact p {
-            max-width: 640px;
-            margin: 0 auto;
-        }
+    #contact h3 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
 
-         /* Footer Styles */
+    #contact p {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Footer Styles */
     .footer {
       background-color: #002147;
       color: white;
@@ -198,14 +198,19 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px; /* Add space between the logo and the text */
+      gap: 20px;
+      /* Add space between the logo and the text */
     }
 
     .footer .logo-footer img {
-      width: 50px; /* Set a fixed width */
-      height: 50px; /* Set a fixed height to match the width */
-      border-radius: 50%; /* Makes the image circular */
-      object-fit: cover; /* Ensures the image covers the entire circle without stretching */
+      width: 50px;
+      /* Set a fixed width */
+      height: 50px;
+      /* Set a fixed height to match the width */
+      border-radius: 50%;
+      /* Makes the image circular */
+      object-fit: cover;
+      /* Ensures the image covers the entire circle without stretching */
     }
 
     .footer .footer-text {
@@ -213,123 +218,108 @@
       color: #ccc;
     }
   </style>
-    </style>
 </head>
 
 <body>
-   
-        <!-- Navbar -->
-        <nav>
-            <h1>AI-Powered Water Health Monitoring</h1>
-            <div>
-                <a href="#home">Home</a>
-                <a href="login.html">Login</a>
-                <a href="#signup">Signup</a>
-            </div>
-        </nav>
 
-        <!-- Hero Section -->
-        <section id="home">
-            <video autoplay muted loop>
-                <source src="vdo/Blue Beach Wave YouTube Intro Video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <h2>AI-Powered Water Health Monitoring</h2>
-            <p>Real-time water quality insights using AI and IoT sensors</p>
-            <a href="#features">Explore Features</a>
-        </section>
+  <!-- Navbar -->
+  <nav>
+    <h1>AI-Powered Water Health Monitoring</h1>
+    <div>
+      <a href="#home">Home</a>
+      <a href="login.html">Login</a>
+      <a href="#signup">Signup</a>
+    </div>
+  </nav>
 
-        <!-- Description Paragraph Section -->
-        <section class="description">
-            <p>
-                Our AI-Powered Water Health Monitoring System is a smart, portable solution aimed at ensuring clean and
-                safe
-                water access. By integrating IoT sensors and AI image classification, it detects water pollution in real
-                time
-                and explains potential health risks through an interactive chatbot. The system architecture connects
-                hardware
-                sensors with a Flask backend, an AI model, and a Firebase-powered dashboard for live monitoring.
-                Designed to
-                be
-                affordable and scalable, it empowers rural communities, schools, and mobile labs with actionable
-                insights
-                rather
-                than just raw data. This innovative fusion of AI, IoT, and health awareness aims to raise public
-                consciousness
-                and potentially save lives.
-            </p>
-        </section>
+  <!-- Hero Section -->
+  <section id="home">
+    <video autoplay muted loop>
+      <source src="vdo/Blue Beach Wave YouTube Intro Video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <h2>AI-Powered Water Health Monitoring</h2>
+    <p>Real-time water quality insights using AI and IoT sensors</p>
+    <a href="#features">Explore Features</a>
+  </section>
 
-        <!-- Features Section -->
-        <section id="features">
-            <h3>Core Features</h3>
-            <div class="feature-container">
-                <div class="feature-box">
-                    <img src="img/real time.png" alt="Real-Time Monitoring" width="300px" height="300px">
-                    <h4>Real-Time Monitoring</h4>
-                    <p>Track pH, turbidity, temperature & chemicals live using embedded sensors.</p>
-                </div>
-                <div class="feature-box">
-                    <img src="img/data-analytics.avif" alt="AI-Based Analysis" width="300px" height="300px">
-                    <h4>AI-Based Analysis</h4>
-                    <p>Detect anomalies, trends, and threats with predictive AI models.</p>
-                </div>
-                <div class="feature-box">
-                    <img src="img/mobile alert.jpg" alt="Instant Mobile Alerts" width="300px" height="300px">
-                    <h4>Instant Mobile Alerts</h4>
-                    <p>Get alerts on contamination risks and view your water's health report anytime.</p>
-                </div>
-                <div class="feature-box">
-                    <img src="img/chat-bot-icon.jpg" width="300px" height="300px" alt="AI Detection" />
-                    <h4>Health Risk Chatbot</h3>
-                        <p>Engage with our intelligent chatbot to understand potential health risks based on water
-                            quality
-                            data.</p>
-                </div>
-                <div class="feature-box">
-                    <img src="img/internet-of-things.png" width="300px" height="300px" alt="AI Detection" />
-                    <h4>IoT Sensors</h3>
-                        <p>Collect real-time data using advanced IoT sensors that monitor physical and chemical water
-                            parameters.</p>
-                </div>
-                <div class="feature-box">
-                    <img src="img/BRAIN.webp" width="290px" height="290px" alt="AI Detection" />
-                    <h4>AI Detection</h3>
-                        <p>Automatically identify water contamination using trained AI models for accurate and fast
-                            results.</p>
+  <!-- Description Paragraph Section -->
+  <section class="description">
+    <p>
+      Our AI-Powered Water Health Monitoring System is a smart, portable solution aimed at ensuring clean and safe
+      water access. By integrating IoT sensors and AI image classification, it detects water pollution in real time
+      and explains potential health risks through an interactive chatbot. The system architecture connects hardware
+      sensors with a Flask backend, an AI model, and a Firebase-powered dashboard for live monitoring. Designed to be
+      affordable and scalable, it empowers rural communities, schools, and mobile labs with actionable insights rather
+      than just raw data. This innovative fusion of AI, IoT, and health awareness aims to raise public consciousness
+      and potentially save lives.
+    </p>
+  </section>
 
-                </div>
-            </div>
-        </section>
+  <!-- Features Section -->
+  <section id="features">
+    <h3>Core Features</h3>
+    <div class="feature-container">
+      <div class="feature-box">
+        <img src="img/real time.png" alt="Real-Time Monitoring" width="300" height="300" />
+        <h4>Real-Time Monitoring</h4>
+        <p>Track pH, turbidity, temperature & chemicals live using embedded sensors.</p>
+      </div>
+      <div class="feature-box">
+        <img src="img/data-analytics.avif" alt="AI-Based Analysis" width="300" height="300" />
+        <h4>AI-Based Analysis</h4>
+        <p>Detect anomalies, trends, and threats with predictive AI models.</p>
+      </div>
+      <div class="feature-box">
+        <img src="img/mobile alert.jpg" alt="Instant Mobile Alerts" width="300" height="300" />
+        <h4>Instant Mobile Alerts</h4>
+        <p>Get alerts on contamination risks and view your water's health report anytime.</p>
+      </div>
+      <div class="feature-box">
+        <img src="img/chat-bot-icon.jpg" alt="AI Detection" width="300" height="300" />
+        <h4>Health Risk Chatbot</h4>
+        <p>Engage with our intelligent chatbot to understand potential health risks based on water quality data.</p>
+      </div>
+      <div class="feature-box">
+        <img src="img/internet-of-things.png" alt="AI Detection" width="300" height="300" />
+        <h4>IoT Sensors</h4>
+        <p>Collect real-time data using advanced IoT sensors that monitor physical and chemical water parameters.</p>
+      </div>
+      <div class="feature-box">
+        <img src="img/BRAIN.webp" alt="AI Detection" width="290" height="290" />
+        <h4>AI Detection</h4>
+        <p>Automatically identify water contamination using trained AI models for accurate and fast results.</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- About -->
-        <section class="about">
-            <h3>About AI-Powered Water Health Monitoring</h3>
-            <p>Our system helps ensure safe water for communities, industries, and agriculture by bridging modern AI
-                with
-                environmental responsibility.</p>
-        </section>
+  <!-- About -->
+  <section class="about">
+    <h3>About AI-Powered Water Health Monitoring</h3>
+    <p>Our system helps ensure safe water for communities, industries, and agriculture by bridging modern AI with
+      environmental responsibility.</p>
+  </section>
 
-        <!-- Contact -->
-        <section id="contact">
-            <h3>Contact Us</h3>
-            <p>Reach out to collaborate, integrate AI-Powered Water Health Monitoring, or ask for a demo. We’re here to
-                help
-                your region access safer
-                water!</p>
-        </section>
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <p>Reach out to collaborate, integrate AI-Powered Water Health Monitoring, or ask for a demo. We’re here to help your
+      region access safer water!</p>
+  </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-              <div class="logo-footer">
-                <img src="img/logo.jpg" alt="Logo" />
-              </div>
-              <div class="footer-text">
-                © 2025 <strong>Projenius</strong>. All rights reserved.
-              </div>
-            </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="logo-footer">
+        <img src="img/logo.jpg" alt="Logo" />
+      </div>
+      <div class="footer-text">
+        © 2025 <strong>Projenius</strong>. All rights reserved.
+      </div>
+    </div>
+  </footer>
 
 </body>
 
 </html>
+
